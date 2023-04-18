@@ -12,6 +12,6 @@ datos_madrid <-
   select(fecha, sexo, grupo_edad, num_casos) |> 
   summarise(num_casos = sum(num_casos), .by = c(fecha, sexo))
 
-write_csv(datos_madrid, file = ".datos_madrid.csv")
+write_csv(datos_madrid, file = "./datos_madrid.csv")
            
 
